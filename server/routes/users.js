@@ -1,9 +1,10 @@
 const express = require("express");
 const user = require("../models/user.js");
+const verifyUser = require("../authenticate.js");
 const users = express.Router();
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const verifyUser = require("../authenticate.js");
+require("dotenv").config();
 
 // get user
 users.get("/get", verifyUser, async (req, res) => {
@@ -17,7 +18,7 @@ users.get("/get", verifyUser, async (req, res) => {
 });
 
 function generateToken(id) {
-  return jwt.sign({id}, "jkkkdkdkdjf", {expiresIn: "30d"});
+  return jwt.sign({id}, process.env.SECRET_TOKEN, {expiresIn: "30d"});
 }
 
 users.post("/login", async (req, res) => {
