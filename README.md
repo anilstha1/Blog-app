@@ -7,8 +7,8 @@ This is blog app built using MERN (MongoDb, Express, React, Node.js) stack to cr
 1. Clone the repository:
 
    ```
-   git clone https://github.com/your-username/mern-stack-blog-app.git
-   cd mern-stack-blog-app
+   git clone https://github.com/anilstha1/Blog-app.git
+   cd Blog-app
    ```
 2. Start the backend:
     ```
