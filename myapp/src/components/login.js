@@ -53,9 +53,13 @@ function Login() {
   return (
     <>
       <div className="container my-5 py-5 d-flex justify-content-center">
-        <div className="w-25">
-          <form>
-            <label className="form-label">username</label>
+        <form
+          className="border p-3 rounded d-flex flex-column gap-3"
+          style={{width: "400px"}}
+        >
+          <h1 className="text-center">Sign In</h1>
+          <div className="form-outline">
+            <label className="form-label">Username</label>
             <input
               type="text"
               className="form-control"
@@ -64,7 +68,8 @@ function Login() {
                 setUsername(e.target.value);
               }}
             />
-
+          </div>
+          <div className="form-outline">
             <label className="form-label">password</label>
             <input
               type="password"
@@ -74,12 +79,11 @@ function Login() {
                 setPassword(e.target.value);
               }}
             />
-
-            <button className="btn btn-primary my-3" onClick={getuser}>
-              Submit
-            </button>
-          </form>
-        </div>
+          </div>
+          <button className="w-100 btn btn-primary my-3" onClick={getuser}>
+            Login
+          </button>
+        </form>
       </div>
     </>
   );
