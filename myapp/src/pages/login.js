@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import axios from "axios";
 import {useNavigate} from "react-router-dom";
 import {useDispatch} from "react-redux";
-import {authActions} from "./index";
+import {authActions} from "../components/index";
 function Login() {
   const dispatch = useDispatch();
   const [username, setUsername] = useState("");
@@ -70,7 +70,7 @@ function Login() {
             />
           </div>
           <div className="form-outline">
-            <label className="form-label">password</label>
+            <label className="form-label">Password</label>
             <input
               type="password"
               className="form-control"

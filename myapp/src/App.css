@@ -1,0 +1,9 @@
+.post{
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .post{
+        width:50%;
+    }
+  }

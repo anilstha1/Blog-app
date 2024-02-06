@@ -75,8 +75,9 @@ function Blogs() {
                 <div className="row">
                   <div className="col-md-4">
                     <img
-                      src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80"
-                      className="image"
+                      src={blog.image}
+                      alt={blog.title}
+                      style={{height: "300px"}}
                     />
                   </div>
                   <div className="col-md-8 fs-5">

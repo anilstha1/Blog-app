@@ -3,14 +3,14 @@ import {Routes, Route} from "react-router-dom";
 import Navbar from "./components/navbar";
 import "./App.css";
 
-import Login from "./components/login";
-import Signup from "./components/signup";
+import Login from "./pages/login";
+import Signup from "./pages/signup";
 
 import "bootstrap/dist/css/bootstrap.css";
-import Home from "./components/home";
-import Blogs from "./components/blogs";
-import AddBlogs from "./components/addblog";
-import BlogDetails from "./components/blogDetails";
+import Home from "./pages/home";
+import Blogs from "./pages/blogs";
+import AddBlogs from "./pages/addblog";
+import BlogDetails from "./pages/blogDetails";
 const App = () => {
   return (
     <>

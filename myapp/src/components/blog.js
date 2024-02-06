@@ -12,8 +12,8 @@ function Blog({blog}) {
           <div className="row">
             <div className="col-12 col-md-4">
               <img
-                src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80"
-                alt="blog"
+                src={blog.image}
+                alt={blog.title}
                 className="object-fit-cover img-fluid w-100 border rounded"
                 style={{maxHeight: "300px"}}
               />

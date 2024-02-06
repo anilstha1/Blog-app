@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
-import Blog from "./blog";
+import Blog from "../components/blog";
 
 function Home() {
   const [blogs, setBlogs] = useState([]);

@@ -3,6 +3,7 @@ import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {Link} from "react-router-dom";
 import {authActions} from "./index";
+import {AiOutlineMenu} from "react-icons/ai";
 const Navbar = () => {
   const dispatch = useDispatch();
   const isloggedin = useSelector((state) => state.isloggedin);
@@ -32,11 +33,12 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div className="container fs-3">
+        <div className="container">
           <Link className="navbar-brand fw-bolder fs-2" href="">
             Navbar
           </Link>
-          <ul className="navbar-nav  mb-2 mb-lg-0">
+
+          <ul className="navbar-nav  mb-2 mb-lg-0 d-flex">
             <li className="nav-item">
               <Link className="nav-link me-auto" aria-current="page" to="/">
                 Home
